@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity"
+    tools:ignore="HardcodedText">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="  Durak seç:" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="266dp"
+        android:layout_height="31dp"
+        android:text="Durak kişi sayısı gir"
+        android:layout_below="@+id/spinner2"
+
+        />
+
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="2dp" />
+
+    <Button
+        android:id="@+id/kaydet"
+        android:layout_width="206dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/number"
+        android:layout_marginTop="33dp"
+        android:text="Kaydet" />
+
+
+    <Button
+        android:id="@+id/rota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number"
+        android:layout_marginTop="142dp"
+        android:rotationX="-4"
+        android:text="Rotaları hesapla" />
+
+    <Button
+        android:id="@+id/btnadminrota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kaydet"
+        android:layout_marginTop="140dp"
+        android:text="Rotaları Görüntüle" />
+
+
+</RelativeLayout>
